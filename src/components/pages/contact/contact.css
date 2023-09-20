@@ -1,0 +1,66 @@
+.contact-container {
+  padding: 2rem 0;
+}
+.contact-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem 1rem;
+  color: black;
+}
+.contact-title p {
+  color: rgb(11, 11, 171);
+  font-weight: 700;
+}
+.contact-content {
+  line-height: 2rem;
+  font-size: 1.1rem;
+  margin: 3rem 1.5rem 3rem 1.5rem;
+}
+.contact-content a {
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 7px;
+}
+.contact-footer {
+  margin: 3rem 1.5rem 3rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.contact-footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.copyright {
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 4rem 1.5rem 2rem 1.5rem;
+}
+
+@media (min-width: 760px) {
+  .contact-title {
+    font-size: 3.5rem;
+    text-align: start;
+  }
+  .contact-content {
+    width: 480px;
+    font-size: 1.3rem;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  .copyright {
+    margin: 0;
+    align-self: center;
+  }
+}

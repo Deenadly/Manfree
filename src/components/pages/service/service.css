@@ -1,0 +1,64 @@
+.service-container {
+  background-color: #211dcc;
+  color: white;
+  padding: 2rem 0;
+  display: grid;
+}
+.service-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+.service {
+  display: grid;
+}
+.service-parent {
+  background-color: #3a28dc;
+  margin: 2rem 1.5rem;
+  padding: 3rem;
+  border-radius: 5px;
+}
+.service img {
+  height: 60px;
+  width: 60px;
+}
+.service-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.service-list li {
+  padding: 0.7rem;
+  background-color: #4b3be8;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+.service-sub-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+.service-sub-title:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+}
+.service-list li:hover {
+  background-color: #513dff;
+  cursor: pointer;
+}
+
+@media (min-width: 760px) {
+  .service-title {
+    font-size: 3.5rem;
+    text-align: start;
+  }
+  .service {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+  .service-parent {
+    margin: 1rem;
+  }
+}

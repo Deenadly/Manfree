@@ -1,0 +1,43 @@
+.navbar-container {
+  display: grid;
+  gap: 1rem;
+  background-color: rgb(33, 29, 204);
+}
+.navbar-image-parent {
+  display: grid;
+  place-items: center;
+}
+.navbar-parent {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid white;
+  align-items: center;
+  height: 2.5rem;
+}
+.navbar-parent a {
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navbar-parent a:hover {
+  color:black;
+}
+@media (min-width: 760px) {
+  .navbar-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+  .navbar-parent {
+    border: none;
+    height: 4.5rem;
+  }
+  .navbar-parent a {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .navbar-image-parent {
+    justify-self: start;
+    padding-left: 1.3rem;
+  }
+}
